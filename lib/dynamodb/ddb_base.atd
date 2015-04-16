@@ -7,12 +7,14 @@ type attribute = {
   ?ss  <json name="SS">: string list option;
   ?n <json name="N">: string option;
   ?ns <json name="NS">: string list option
+  ?bool <json name="BOOL">: string option;
 }
 
 type attribute_type = [
    S
   | N
   | B
+  | BOOL
 ]
 
 type attribute_definition =
